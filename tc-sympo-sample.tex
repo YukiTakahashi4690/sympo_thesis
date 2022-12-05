@@ -40,7 +40,7 @@ This paper presents ... foobar foobar foobar foobar foobar foobar foobar foobar 
 \end{itemize}
 
 \subsection{ハードウェア}
-本チームは屋外自律移動ロボットとして, ORNE-α, ORNE-box, ORNE-box2の開発を行っており, つくばチャレンジ2022にはこれらのロボットが参加する. \figref{fig:matching-concept}に本チームの開発している自律移動ロボットの外観を示す. これらのロボットはi-Cart middleをベースとしており, 主なセンサはIMU, 測域センサである. 
+本チームは屋外自律移動ロボットとして, ORNE-α, ORNE-box, ORNE-box2の開発を行っており, つくばチャレンジ2022にはこれらのロボットが参加する. \figref{fig:orne-series}に本チームの開発している自律移動ロボットの外観を示す. これらのロボットはi-Cart middleをベースとしており, 主なセンサはIMU, 測域センサである. 
 
 \begin{figure}[h]
   \centering
@@ -61,14 +61,8 @@ This paper presents ... foobar foobar foobar foobar foobar foobar foobar foobar 
     \caption*{(c) ORNE-box2}
   \end{minipage}
   \caption{ORNE-Series}
-  \label{fig:matching-concept}%\vspace*{-2mm}
+  \label{fig:orne-series}%\vspace*{-2mm}
 \end{figure}
-\begin{figure*}
-  \centering
-  \includegraphics[width=130mm]{fig/icp-comp_viz_hall_normal.pdf}
-  \caption{An example of registration results of standard ICP and MAP-ICP in the hallway environment.}
-  \label{fig:icp-comp_viz_hall_normal}%\vspace*{-2mm}
-\end{figure*}
 
 \begin{table}[h]
   \centering
@@ -97,20 +91,32 @@ This paper presents ... foobar foobar foobar foobar foobar foobar foobar foobar 
   \end{table}
 
 \subsection{ソフトウェア}
+本チームでは, 従来よりROS(Robot Operating System)のnavigation stack[1]をもとに開発されたシステムであるorne\_navigationにより自律走行させている. \figref{fig:soft-fig}に開発しているロボットのソフトウェアを含むシステム構成を示す. このシステムは, 2D-LiDARを用いたMonte Carlo Localization(MCL)により確率的に自己位置を推定し, 経路計画に基づいて自律走行している. また, GitHubのopen-rdc[2]でプロクラムを公開している.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=85mm]{fig/software.pdf}
+  \caption{Structure of the system.}
+  \label{fig:soft-fig}%\vspace*{-2mm}
+\end{figure}
 
-\section{図}
-\label{sec:fig_main}
-本章では、図を挿入する複数の方法、キャプションの書き方や本文中での参照の仕方について述べる。
+\section{各チームの方針}
+本チームには, チームORNE-α, ORNE-box, ORNE-box2の3チームが存在する. 従って本章では, 各チームごとの活動方針を述べる. ただし, ORNE-box2はORNE-boxの後継機であるため, 活動方針は同じである.
 
-\subsection{Figure の挿入}
-\figref{fig:matching-concept}に、図を挿入する基本形を示す。
-図の挿入には、figure 環境（\verb*|\begin{figure}|、\verb*|\end{figure}|）と \verb*|\include| \verb*|graphics{}| コマンドを用いる。
-具体的な書き方は \LaTeX ソースを参照されたい。
+\subsection{チームORNE-αについて}
+2D-LiDARベースの自律走行時, 自己位置推定の結果が不確かになる場合がある. この状態での走行はリタイアの要因の一つになる可能性がある. そこで, チームORNE-αは, 2D-LiDARベースの自律走行と機械学習を用いた自律走行の切り替えによる安定した走行を目的としている. 昨年度は, orne\_navigationによる自律走行時, 自己位置推定の尤度が低下した場合に, カメラ画像を入力としたend-to-end学習器を用いた自律走行による切り替えを行った. しかし, 意図しない箇所でカメラを用いた走行へ切り替えが起こってしまうことがあった. そこで, 本年度はそれらの問題を解決するために, 取り組んだ内容に関して以下で紹介する. 
 
-\figref{fig:icp-comp_viz_hall_normal}のように2カラムで2段抜きの図を挿入する場合、figure* 環境（\verb*|\begin{figure*}|、\verb*|\end| \verb*|{figure*}|）を用いる。
+\subsubsection{提案手法}
+提案手法を\figref{fig:kirikae}に示す. 
 
-\subsection{キャプション}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=85mm]{fig/kirikae.pdf}
+  \caption{Developed system of switching action.}
+  \label{fig:kirikae}%\vspace*{-2mm}
+\end{figure}
+
+\subsection{チームORNE-box, ORNE-box2について}
 図の下に \verb*|\caption{}| コマンドでキャプションを付ける。
 キャプションを英語で書くか、日本語で書くかを論文中で統一する。
 論文を投稿する学会のフォーマットに従うが、和文論文でも英語のキャプションとする場合が多い。

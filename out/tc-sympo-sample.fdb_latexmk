@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1670208437 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1670208437
-  "out/tc-sympo-sample.dvi" 1670208437 24112 bde490ee8b9988f6974de55a6144b0c8 "latex"
+["dvipdf"] 1670230911 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1670230929
+  "out/tc-sympo-sample.dvi" 1670230911 26036 244b759fd271aba66dbdaf739df03e21 "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1670208436 "/home/y-takahashi/tex_lib/tc-sympo-sample/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1670208437
+["latex"] 1670230910 "/home/y-takahashi/tex_lib/sympo_thesis/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1670230929
   "/etc/texmf/web2c/texmf.cnf" 1669897342 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/y-takahashi/tex_lib/tc-sympo-sample/tc-sympo-sample.tex" 1670208435 16965 6dc601bbf71aea133f48a981ab5e6c74 ""
+  "/home/y-takahashi/tex_lib/sympo_thesis/tc-sympo-sample.tex" 1670230929 18127 548e8eb53062f30d31afba89b58546d9 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm" 1136768653 6880 f19b8995b61c334d78fc734065f6b4d4 ""
@@ -122,11 +122,12 @@
   "fig/alpha.pdf" 1670149939 34129 e512bd70ba514efe173ce5013fba808b ""
   "fig/box.pdf" 1670150714 119510 ba0905744ca7d84e0a92e737e4a41646 ""
   "fig/box2.pdf" 1670151378 110943 afa9c23ac25d59145c0b934a20baa95a ""
-  "fig/icp-comp_viz_hall_normal.pdf" 1670144282 6746 1c8c0626a257c2d6a1a4b1c913e75bec ""
+  "fig/kirikae.pdf" 1670230234 112123 f131aacea4595370d5c97c707039cd37 ""
+  "fig/software.pdf" 1670222896 50542 58062449ad6bc1dddfd4cd8eede25274 ""
   "jsproceedings.cls" 1609129923 23503 31ea80bc6a420cac8ffa562f1f435009 ""
-  "out/tc-sympo-sample.aux" 1670208437 2723 98a7d9ad0a78600320235aae11131f43 "latex"
-  "tc-sympo-sample.tex" 1670208435 16965 6dc601bbf71aea133f48a981ab5e6c74 ""
+  "out/tc-sympo-sample.aux" 1670230911 2940 853af493167bff390dfa5b9a13e220e1 "latex"
+  "tc-sympo-sample.tex" 1670230929 18127 548e8eb53062f30d31afba89b58546d9 ""
   (generated)
-  "out/tc-sympo-sample.log"
-  "out/tc-sympo-sample.aux"
   "out/tc-sympo-sample.dvi"
+  "out/tc-sympo-sample.aux"
+  "out/tc-sympo-sample.log"

@@ -1,4 +1,4 @@
-PWD /home/y-takahashi/tex_lib/tc-sympo-sample
+PWD /home/y-takahashi/tex_lib/sympo_thesis
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -6,7 +6,7 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/euptex/uplatex.fmt
-INPUT /home/y-takahashi/tex_lib/tc-sympo-sample/tc-sympo-sample.tex
+INPUT /home/y-takahashi/tex_lib/sympo_thesis/tc-sympo-sample.tex
 OUTPUT out/tc-sympo-sample.log
 INPUT jsproceedings.cls
 INPUT jsproceedings.cls
@@ -313,17 +313,19 @@ INPUT fig/box.pdf
 INPUT extractbb -B cropbox -O fig/box.pdf
 INPUT fig/box2.pdf
 INPUT extractbb -B cropbox -O fig/box2.pdf
-INPUT fig/icp-comp_viz_hall_normal.pdf
-INPUT extractbb -B cropbox -O fig/icp-comp_viz_hall_normal.pdf
+OUTPUT out/tc-sympo-sample.dvi
+INPUT fig/software.pdf
+INPUT extractbb -B cropbox -O fig/software.pdf
+INPUT fig/kirikae.pdf
+INPUT extractbb -B cropbox -O fig/kirikae.pdf
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-OUTPUT out/tc-sympo-sample.dvi
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
